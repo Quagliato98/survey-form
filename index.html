@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">GoGo Airlaines</h1>
+            <p class="description">
+                Describe your experience with us by answering this questionnaire below
+            </p>
+        </header>
+        <main class="content">
+            <form action="post" id="survey-form">
+                <div class="form-group">
+                    <label for="name" id="name-label">Name</label>
+                    <input type="text" name="name" id="name" required placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label for="email" id="email-label">E-mail</label>
+                    <input type="email" name="email" id="email" required placeholder="E-mail">
+                </div>
+                <div class="form-group">
+                    <label for="number" id="number-label">How goes your travel?</label>
+                    <input type="number" name="number" id="number" min="1" max="10" required>
+                </div>
+                <div class="form-group">
+                    <label for="dropdown">Select below the place you traveled</label>
+                    <select name="dropdown" id="dropdown" required>
+                        <option disabled selected value>The place that you have been</option>
+                        <option value="New York">New York</option>
+                        <option value="San Francisco">San Francisco</option>
+                        <option value="Las Vegas">Las Vegas</option>
+                        <option value="Los Angeles">Los Angeles</option>
+                        <option value="California">California</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="place-to-go">Select bellow the place you will like to go</label>
+                    <label>
+                        <input type="radio" name="place-to-go" id="new-york"> New York
+                    </label>
+                    <label>
+                        <input type="radio" name="place-to-go" id="san-francisco"> San Francisco
+                    </label>
+                    <label>
+                        <input type="radio" name="place-to-go" id="las-vegas"> Las Vegas
+                    </label>
+                    <label>
+                        <input type="radio" name="place-to-go" id="los-angeles"> Los Angeles
+                    </label>
+                    <label>
+                        <input type="radio" name="place-to-go" id="california"> California
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="most-liked">What you most liked in your travel?</label>
+                    <label>
+                        <input type="checkbox" name="most-liked" id="culinary"> Culinary
+                    </label>
+                    <label>
+                        <input type="checkbox" name="most-liked" id="people"> People
+                    </label>
+                    <label>
+                        <input type="checkbox" name="most-liked" id="wheather"> Wheather
+                    </label>
+                    <label>
+                        <input type="checkbox" name="most-liked" id="landscape"> Landscape
+                    </label>
+                </div>
+                <div class="form-group">
+                    <textarea name="additional-comments" id="aditional-comments" cols="30" rows="10" placeholder="Additional commentaries about the travel, your experience...">
+                    </textarea>
+                </div>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
