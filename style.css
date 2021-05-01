@@ -8,7 +8,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #000000;
     margin: 1rem 0;
-    background: url(/joel-mott-kUReGwALGbs-unsplash.jpg) no-repeat center;
+    background: url(/joel-mott-kUReGwALGbs-unsplash.jpg) no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
