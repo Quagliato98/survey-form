@@ -2,20 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    color: #000000;
     margin: 1rem 0;
-    background-color: #8201be;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .container {
-    background: rgba( 241, 241, 241, 0.30 );
+    width: 50rem;
+    background-color: #c662f5;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur(3.0px);
     -webkit-backdrop-filter: blur( 3.0px );
@@ -23,14 +22,18 @@ body {
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
-h1 {
-    font-family: 'Oswald', sans-serif;
-}
-
-h1, p {
+#title, .description {
     margin: 1rem 0;
     padding: 1rem;
     text-align: center;
+    font-size: 48pt;
+    font-family: 'Oswald', sans-serif;
+}
+
+.description {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 19pt;
 }
 
 .form-group{
@@ -47,13 +50,19 @@ label {
     
 }
 
+#label {
+    font-size: 16pt;
+    font-weight: bold;
+}
+
 input, select, textarea {
     border: none;
-    outline: none;
+    outline-color: #93f13a;
 }
 
 input, button, select {
-    padding: 0.5rem;
+    font-size: 14pt;
+    padding: 0.8rem;
     border-radius: 0.5rem;
 }
 
